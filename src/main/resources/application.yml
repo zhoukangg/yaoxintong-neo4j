@@ -1,0 +1,26 @@
+server:
+  servlet:
+    context-path: /medicinekg
+  port: 9899
+  tomcat:
+    uri-encoding: UTF-8  
+  
+spring:
+  data:
+    neo4j:
+      uri: bolt://123.56.87.74
+      username: neo4j
+      password: vnique
+  datasource:
+    url: jdbc:mysql://123.56.87.74:3307/yaoxintong_r?characterEncoding=UTF-8
+    username: root
+    password: vnique
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    database: MYSQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
